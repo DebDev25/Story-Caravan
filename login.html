@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="bookstore">
+    <div class="container">
+        <span>Use Code MEH50 (Flat 50% off)</span>
+    </div>
+
+    <nav class="navbar">
+        <section class="top-navbar">
+            <div class="left-content">
+            <span>
+                <a href="index.html"><img alt="logo" id="logo" src="Images/logo.png"></a>
+            </span>
+            </div>
+            <div class="center-content">
+                <label for="search-bar"></label>
+                <input id="search-bar" placeholder="Search by Title, Author, Keyword or ISBN" type="text">
+                <button id="search">
+                    <svg height="20" viewBox="0,0,256,256" width="20" x="0px" xmlns="http://www.w3.org/2000/svg"
+                         y="0px">
+                        <g fill="#f5f5f5" fill-rule="nonzero" font-family="none" font-size="none"
+                           stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt"
+                           stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1"
+                           style="mix-blend-mode: normal">
+                            <g transform="scale(8.53333,8.53333)">
+                                <path d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="right-content">
+                <span>
+                    <svg class="acc-logo" data-name="Layer 1" id="Layer_1" viewBox="0 0 122.88 122.88"
+                         xmlns="http://www.w3.org/2000/svg"><title>my-account</title>
+                        <path d="M61.44,0a61.59,61.59,0,0,1,56.78,38l.07.18A61.43,61.43,0,0,1,18,104.88h0A61.54,61.54,0,0,1,4.66,84.94l-.07-.19A61.35,61.35,0,0,1,18,18h0A61.54,61.54,0,0,1,37.94,4.66l.18-.07A61.25,61.25,0,0,1,61.44,0ZM49.54,79.32c-2.14-1.83-4.2-3.89-4.54-7.65h-.28a3.79,3.79,0,0,1-1.87-.49,5.1,5.1,0,0,1-2.05-2.49c-.95-2.18-1.7-7.91.68-9.55L41,58.85l0-.64c-.1-1.15-.12-2.55-.14-4-.09-5.39-.2-11.91-4.53-13.22l-1.85-.56,1.22-1.51a70,70,0,0,1,10.84-11c4.17-3.28,8.41-5.47,12.56-6.1A15.09,15.09,0,0,1,71.3,25.22a23,23,0,0,1,3.27,3.28,13.93,13.93,0,0,1,9.78,5.72,19.89,19.89,0,0,1,3.18,6.42,22.34,22.34,0,0,1,.86,7.28,17.54,17.54,0,0,1-5.08,11.81,3.62,3.62,0,0,1,1.58.4c1.81,1,1.87,3.07,1.39,4.83-.47,1.47-1.06,3.17-1.63,4.6C84,71.5,83,71.86,81,71.65c-.08,4.18-2.8,6.18-5.47,8.49l.08.12a31.89,31.89,0,0,0,3.51,4.52.75.75,0,0,1,.12.14c6.19,4.38,19.56,5.44,25.34,8.66l.23.14a54.09,54.09,0,1,0-86.83,0h0l.23-.14C24,90.36,40.73,89.3,47,85a19.43,19.43,0,0,0,1.43-2.77c.41-1,.81-2,1.15-2.86Z"/>
+                    </svg>Account<button id="acc-btn">&gt;</button></span>
+                <span id="cart">
+                    <button id="cart-btn">
+                    <?xml version="1.0" encoding="utf-8"?>
+                        <svg id="Layer_1" viewBox="0 0 122.43 122.88" x="0px" xml:space="preserve"
+                             xmlns="http://www.w3.org/2000/svg"
+                             y="0px"><style type="text/css">.st0 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                        }</style><g><path class="st0" d="M22.63,12.6h93.3c6.1,0,5.77,2.47,5.24,8.77l-3.47,44.23c-0.59,7.05-0.09,5.34-7.56,6.41l-68.62,8.73 l3.63,10.53c29.77,0,44.16,0,73.91,0c1,3.74,2.36,9.83,3.36,14h-12.28l-1.18-4.26c-24.8,0-34.25,0-59.06,0 c-13.55-0.23-12.19,3.44-15.44-8.27L11.18,8.11H0V0h19.61C20.52,3.41,21.78,9.15,22.63,12.6L22.63,12.6z M53.69,103.92 c5.23,0,9.48,4.25,9.48,9.48c0,5.24-4.24,9.48-9.48,9.48c-5.24,0-9.48-4.24-9.48-9.48C44.21,108.17,48.45,103.92,53.69,103.92 L53.69,103.92z M92.79,103.92c5.23,0,9.48,4.25,9.48,9.48c0,5.24-4.25,9.48-9.48,9.48c-5.24,0-9.48-4.24-9.48-9.48 C83.31,108.17,87.55,103.92,92.79,103.92L92.79,103.92z M30.8,43.07H45.9l-5.48-22.91c-5.4,0-10.72-0.01-15.93-0.01l1.84,6.86 L26.39,27L30.8,43.07L30.8,43.07L30.8,43.07z M48.31,20.17l5.48,22.9h14.54l-5.5-22.88L48.31,20.17L48.31,20.17L48.31,20.17z M70.74,20.2l5.5,22.87h13.91l-5.48-22.85L70.74,20.2L70.74,20.2L70.74,20.2z M92.58,20.23l5.48,22.85l13.92,0l1.54-18.36 c0.43-5.12,1.33-4.47-3.63-4.47C104.23,20.24,98.44,20.23,92.58,20.23L92.58,20.23L92.58,20.23z M111.49,48.89H99.45l3.97,16.56 l0.98-0.13c6.07-0.87,5.67,0.52,6.15-5.21L111.49,48.89L111.49,48.89z M95.77,66.5l-4.22-17.61h-13.9l4.67,19.44L95.77,66.5 L95.77,66.5L95.77,66.5z M74.66,69.37l-4.93-20.49l-14.55,0l5.37,22.41L74.66,69.37L74.66,69.37L74.66,69.37z M52.9,72.34 l-5.61-23.45H32.4l6.96,25.3L52.9,72.34L52.9,72.34z"/></g></svg>
+                    </button>
+                </span>
+            </div>
+        </section>
+
+        <section class="bottom-navbar">
+            <span><a href="#">Books</a></span>
+            <span><a href="#">New Arrivals</a></span>
+            <span><a href="#">Box Sets</a></span>
+            <span><a href="#">Bestsellers</a></span>
+            <span><a href="#">Fiction Books</a></span>
+            <span><a href="#">Award Winners</a></span>
+            <span><a href="#">Featured Authors</a></span>
+            <span><a href="#">Today's Deal</a></span>
+            <span><a href="#">Request a Book</a></span>
+        </section>
+    </nav>
+</div>
+<hr>
+<section class="login-background">
+    <div id="form-container">
+        <form action="" id="login-form">
+            <h2 class="form-h2">Login</h2>
+            <label class="form-label" for="username">Username</label>
+            <input class="form-input" id="username" name="username" placeholder="Enter your username" required
+                   type="text">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-input" id="password" name="password" placeholder="Enter your password" required
+                   type="password">
+            <button class="form-button" type="submit">Login</button>
+        </form>
+    </div>
+</section>
+<hr id="exception">
+<footer>
+    <section class="footer-nav">
+        <div>
+            <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">YT Featured Videos</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Secure Shopping</a></li>
+                <li><a href="#">Copyright Policy</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Return</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer-links">
+        <!-- svgs taken from https://icons8.com -->
+        <a href="https://www.facebook.com/">
+            <svg height="30" viewBox="0 0 50 50" width="30" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com">
+            <svg height="30" viewBox="0 0 50 50" width="30" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+            </svg>
+        </a>
+        <a href="https://www.x.com">
+            <svg height="30" viewBox="0 0 50 50" width="30" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+            </svg>
+        </a>
+        <a href="https://www.youtube.com">
+            <svg height="30" viewBox="0 0 50 50" width="30" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"></path>
+            </svg>
+        </a>
+    </section>
+    <section class="footer-copyright">
+        Copyright &copy;. Story Caravan. All rights reserved
+    </section>
+</footer>
+<div class="login" hidden>
+    <button id="login-btn"><a href="login.html">Login</a></button>
+    <span>New to Story Caravan?</span><br>
+    <a href="#" id="signup">Sign-Up</a>
+    <hr>
+    <ul>
+        <li><a>Your Account</a></li>
+        <li><a>Personal Settings</a></li>
+        <li><a>Your Orders</a></li>
+        <li><a>Your Wishlist</a></li>
+    </ul>
+</div>
+
+<div class="description" hidden>
+    <button id="close-btn">&#10008;</button>
+    <h1>
+        Description
+    </h1>
+    <h2>
+        Genre
+    </h2>
+    <p></p>
+    <section id="shop">
+        <button>Add To Wishlist</button>
+    </section>
+</div>
+
+<div class="shopping-cart" hidden>
+    <h2>Items</h2>
+    <h3>Total Price: $0</h3>
+    <hr>
+    <section id="items"></section>
+    <hr>
+    <button id="buy-btn">Buy Now</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
