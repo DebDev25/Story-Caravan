@@ -1,6 +1,6 @@
 # 📚 Story-Caravan
 
-**Story-Caravan** is a frontend web application for an online bookstore, heavily inspired by [BooksWagon](https://bookswagon.com). It offers a clean, responsive, and interactive user interface that allows users to browse books, view descriptions, add them to a cart, and manage their purchases.
+**Story-Caravan** is a frontend web application for an online bookstore, heavily inspired by [Bookswagon](https://bookswagon.com). It offers a clean, responsive, and interactive user interface that allows users to browse books, view descriptions, add them to a cart, and manage their purchases.
 
 ## 🚀 Features
 
